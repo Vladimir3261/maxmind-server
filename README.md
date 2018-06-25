@@ -64,7 +64,7 @@ response example:
         },
         "Error": ""
     }
-json```
+```
 Actions:
 ### How to run:
 
