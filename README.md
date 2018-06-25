@@ -84,36 +84,38 @@ rename config.ini.example to config.ini and edit it:
     default_db_file - Default db file, if it not provided in cli argumants
     http_server - http server listen port like :3000
 ## Apache benchmark results
-    Server Software: Go HTTP server
+ Server Software:        Go HTTP server
+ Server Hostname:        localhost
+ Server Port:            3000
 
-    Document Path:             /?ip=138.68.80.28/
-    Document Length:        78 bytes
+ Document Path:          /?ip=138.68.80.28/
+ Document Length:        78 bytes
 
-    Concurrency Level:          1000
-    Time taken for tests:         7.889 seconds
-    Complete requests:          100000
-    Failed requests:                0
-    Total transferred:              18600000 bytes
-    HTML transferred:            7800000 bytes
-    Requests per second:      12676.02 [#/sec] (mean)
-    Time per request:             78.889 [ms] (mean)
-    Time per request:             0.079 [ms] (mean, across all concurrent requests)
-    Transfer rate:                   2302.48 [Kbytes/sec] received
+ Concurrency Level:      1000
+ Time taken for tests:   7.889 seconds
+ Complete requests:      100000
+ Failed requests:        0
+ Total transferred:      18600000 bytes
+ HTML transferred:       7800000 bytes
+ Requests per second:    12676.02 [#/sec] (mean)
+ Time per request:       78.889 [ms] (mean)
+ Time per request:       0.079 [ms] (mean, across all concurrent requests)
+ Transfer rate:          2302.48 [Kbytes/sec] received
 
-    Connection Times (ms)
-                        min  mean[+/-sd]  median   max
-    Connect:        7      40     98.1     31    1075
-    Processing:    12    39     9.8       39    91
-    Waiting:          5      28     9.1       27    79
-    Total:              28    78     99.0     71    1121
+ Connection Times (ms)
+               min  mean[+/-sd] median   max
+ Connect:        7   40  98.1     31    1075
+ Processing:    12   39   9.8     39      91
+ Waiting:        5   28   9.1     27      79
+ Total:         28   78  99.0     71    1121
 
-    Percentage of the requests served within a certain time (ms)
-      50%     71
-      66%     75
-      75%     77
-      80%     78
-      90%     82
-      95%     86
-      98%     92
-      99%    115
-     100%   1121 (longest request)
+ Percentage of the requests served within a certain time (ms)
+   50%     71
+   66%     75
+   75%     77
+   80%     78
+   90%     82
+   95%     86
+   98%     92
+   99%    115
+  100%   1121 (longest request)
