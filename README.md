@@ -84,6 +84,8 @@ rename config.ini.example to config.ini and edit it:
     default_db_file - Default db file, if it not provided in cli argumants
     http_server - http server listen port like :3000
 ## Apache benchmark results
+
+```text
  Server Software:        Go HTTP server
  Server Hostname:        localhost
  Server Port:            3000
@@ -119,3 +121,4 @@ rename config.ini.example to config.ini and edit it:
    98%     92
    99%    115
   100%   1121 (longest request)
+  ```
