@@ -1,0 +1,4 @@
+database_url=http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz
+database_dir=/etc/maxmind-server
+default_db_file=/etc/maxmind-server/GeoLite2-Country.mmdb
+http_server=":3000"
