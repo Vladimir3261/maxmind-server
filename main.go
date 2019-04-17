@@ -165,6 +165,7 @@ func runServer(dbFile string) {
 		writer.Header().Set("Content-Type", "application/json")
 
 		ip := net.ParseIP(request.URL.Query().Get("ip"))
+		log.Printf("Received request for %s", ip)
 		encoder := json.NewEncoder(writer)
 
 		record, err := db.Country(ip)
